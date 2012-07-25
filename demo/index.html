@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>jQuery-FadeLabel Sample</title>
+	<style type="text/css">
+		.wrapper { width:960px;margin:0 auto; }
+		.container { width:800px;maring:0 auto; }
+		form { width:520px; }
+		form input, form textarea, form label { width:500px;font-family:"Arial", "serif"; }
+		p { position:relative; }
+		label { position:absolute;top:13px;left:13px;font-size:1.3em; }
+		.fadeLabel { padding:10px;font-size:1.3em; }
+		#submit { width:auto;margin:0 0 30px 0;float:right;font-size:1.3em; }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>jQuery-FadeLabel Sample</h1>
+		<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">&lt;/script&gt;
+&lt;script src="../fadelabel/jquery.fadeLabel.js">&lt;/script&gt;
+&lt;script&gt;
+	$(document).ready(function () {
+		$('form .fadeLabel').fadeLabel();
+	});
+&lt;/script&gt;
+		</pre>
+		<form method="post" action="#">
+			<p>
+				<label for="name">Name</label>
+				<input class="fadeLabel" type="text" id="name" name="name" value="" />
+			</p>
+			<p>
+				<label for="email">E-mail</label>
+				<input class="fadeLabel" type="text" id="email" name="email" value="" />
+			</p>
+			<p>
+				<label for="comment">Start typing comment...</label>
+				<textarea id="comment" class="fadeLabel" name="comment"></textarea>
+			</p>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../jquery-1.7.2.min.js">\x3C/script>')</script>
+	<script src="../fadelabel/jquery.fadeLabel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('form .fadeLabel').fadeLabel();
+		});
+	</script>
+</body>
+</html>
